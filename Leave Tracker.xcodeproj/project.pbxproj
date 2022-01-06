@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7905302D2786CC1500C6415E /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905302C2786CC1500C6415E /* VisualEffectBlur.swift */; };
+		797D9DAF26DF66A300C7480A /* AddLeaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DAE26DF66A300C7480A /* AddLeaveView.swift */; };
+		797D9DB126DF687300C7480A /* DesignTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DB026DF687300C7480A /* DesignTeam.swift */; };
+		797D9DB426DF6F4300C7480A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DB326DF6F4300C7480A /* Color.swift */; };
+		798B1D7626DF65A800AE56C6 /* Leave Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D7526DF65A800AE56C6 /* Leave Tracker.swift */; };
+		798B1D7826DF65A800AE56C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D7726DF65A800AE56C6 /* ContentView.swift */; };
+		798B1D7A26DF65A900AE56C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798B1D7926DF65A900AE56C6 /* Assets.xcassets */; };
+		798B1D7D26DF65A900AE56C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798B1D7C26DF65A900AE56C6 /* Preview Assets.xcassets */; };
+		798B1D7F26DF65A900AE56C6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D7E26DF65A900AE56C6 /* Persistence.swift */; };
+		798B1D8226DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D8026DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld */; };
+		798B1D8D26DF65A900AE56C6 /* Leave_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D8C26DF65A900AE56C6 /* Leave_TrackerTests.swift */; };
+		798B1D9826DF65A900AE56C6 /* Leave_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D9726DF65A900AE56C6 /* Leave_TrackerUITests.swift */; };
+		79F2CF542786E7A400D96292 /* LeavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CF532786E7A400D96292 /* LeavesView.swift */; };
+		79F2CF562786E84500D96292 /* MonthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CF552786E84500D96292 /* MonthPickerView.swift */; };
+		79F2CF582786E95400D96292 /* PerfectMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CF572786E95400D96292 /* PerfectMonthView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		798B1D8926DF65A900AE56C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 798B1D6A26DF65A800AE56C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 798B1D7126DF65A800AE56C6;
+			remoteInfo = "Leave Tracker";
+		};
+		798B1D9426DF65A900AE56C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 798B1D6A26DF65A800AE56C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 798B1D7126DF65A800AE56C6;
+			remoteInfo = "Leave Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7905302C2786CC1500C6415E /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		797D9DAE26DF66A300C7480A /* AddLeaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLeaveView.swift; sourceTree = "<group>"; };
+		797D9DB026DF687300C7480A /* DesignTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTeam.swift; sourceTree = "<group>"; };
+		797D9DB326DF6F4300C7480A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		798B1D7226DF65A800AE56C6 /* Leave Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leave Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		798B1D7526DF65A800AE56C6 /* Leave Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leave Tracker.swift"; sourceTree = "<group>"; };
+		798B1D7726DF65A800AE56C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		798B1D7926DF65A900AE56C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		798B1D7C26DF65A900AE56C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		798B1D7E26DF65A900AE56C6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		798B1D8126DF65A900AE56C6 /* Leave_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Leave_Tracker.xcdatamodel; sourceTree = "<group>"; };
+		798B1D8326DF65A900AE56C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798B1D8826DF65A900AE56C6 /* Leave TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leave TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		798B1D8C26DF65A900AE56C6 /* Leave_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leave_TrackerTests.swift; sourceTree = "<group>"; };
+		798B1D8E26DF65A900AE56C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798B1D9326DF65A900AE56C6 /* Leave TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leave TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		798B1D9726DF65A900AE56C6 /* Leave_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leave_TrackerUITests.swift; sourceTree = "<group>"; };
+		798B1D9926DF65A900AE56C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F2CF532786E7A400D96292 /* LeavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeavesView.swift; sourceTree = "<group>"; };
+		79F2CF552786E84500D96292 /* MonthPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerView.swift; sourceTree = "<group>"; };
+		79F2CF572786E95400D96292 /* PerfectMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectMonthView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		798B1D6F26DF65A800AE56C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798B1D8526DF65A900AE56C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798B1D9026DF65A900AE56C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797D9DB226DF6F3900C7480A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				797D9DB326DF6F4300C7480A /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		798B1D6926DF65A800AE56C6 = {
+			isa = PBXGroup;
+			children = (
+				798B1D7426DF65A800AE56C6 /* Leave Tracker */,
+				798B1D8B26DF65A900AE56C6 /* Leave TrackerTests */,
+				798B1D9626DF65A900AE56C6 /* Leave TrackerUITests */,
+				798B1D7326DF65A800AE56C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		798B1D7326DF65A800AE56C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				798B1D7226DF65A800AE56C6 /* Leave Tracker.app */,
+				798B1D8826DF65A900AE56C6 /* Leave TrackerTests.xctest */,
+				798B1D9326DF65A900AE56C6 /* Leave TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		798B1D7426DF65A800AE56C6 /* Leave Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				797D9DB226DF6F3900C7480A /* Extensions */,
+				798B1D7526DF65A800AE56C6 /* Leave Tracker.swift */,
+				798B1D7726DF65A800AE56C6 /* ContentView.swift */,
+				79F2CF572786E95400D96292 /* PerfectMonthView.swift */,
+				79F2CF552786E84500D96292 /* MonthPickerView.swift */,
+				79F2CF532786E7A400D96292 /* LeavesView.swift */,
+				797D9DAE26DF66A300C7480A /* AddLeaveView.swift */,
+				797D9DB026DF687300C7480A /* DesignTeam.swift */,
+				7905302C2786CC1500C6415E /* VisualEffectBlur.swift */,
+				798B1D7926DF65A900AE56C6 /* Assets.xcassets */,
+				798B1D7E26DF65A900AE56C6 /* Persistence.swift */,
+				798B1D8326DF65A900AE56C6 /* Info.plist */,
+				798B1D8026DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld */,
+				798B1D7B26DF65A900AE56C6 /* Preview Content */,
+			);
+			path = "Leave Tracker";
+			sourceTree = "<group>";
+		};
+		798B1D7B26DF65A900AE56C6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				798B1D7C26DF65A900AE56C6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		798B1D8B26DF65A900AE56C6 /* Leave TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				798B1D8C26DF65A900AE56C6 /* Leave_TrackerTests.swift */,
+				798B1D8E26DF65A900AE56C6 /* Info.plist */,
+			);
+			path = "Leave TrackerTests";
+			sourceTree = "<group>";
+		};
+		798B1D9626DF65A900AE56C6 /* Leave TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				798B1D9726DF65A900AE56C6 /* Leave_TrackerUITests.swift */,
+				798B1D9926DF65A900AE56C6 /* Info.plist */,
+			);
+			path = "Leave TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		798B1D7126DF65A800AE56C6 /* Leave Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798B1D9C26DF65A900AE56C6 /* Build configuration list for PBXNativeTarget "Leave Tracker" */;
+			buildPhases = (
+				798B1D6E26DF65A800AE56C6 /* Sources */,
+				798B1D6F26DF65A800AE56C6 /* Frameworks */,
+				798B1D7026DF65A800AE56C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Leave Tracker";
+			productName = "Leave Tracker";
+			productReference = 798B1D7226DF65A800AE56C6 /* Leave Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		798B1D8726DF65A900AE56C6 /* Leave TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798B1D9F26DF65A900AE56C6 /* Build configuration list for PBXNativeTarget "Leave TrackerTests" */;
+			buildPhases = (
+				798B1D8426DF65A900AE56C6 /* Sources */,
+				798B1D8526DF65A900AE56C6 /* Frameworks */,
+				798B1D8626DF65A900AE56C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				798B1D8A26DF65A900AE56C6 /* PBXTargetDependency */,
+			);
+			name = "Leave TrackerTests";
+			productName = "Leave TrackerTests";
+			productReference = 798B1D8826DF65A900AE56C6 /* Leave TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		798B1D9226DF65A900AE56C6 /* Leave TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798B1DA226DF65A900AE56C6 /* Build configuration list for PBXNativeTarget "Leave TrackerUITests" */;
+			buildPhases = (
+				798B1D8F26DF65A900AE56C6 /* Sources */,
+				798B1D9026DF65A900AE56C6 /* Frameworks */,
+				798B1D9126DF65A900AE56C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				798B1D9526DF65A900AE56C6 /* PBXTargetDependency */,
+			);
+			name = "Leave TrackerUITests";
+			productName = "Leave TrackerUITests";
+			productReference = 798B1D9326DF65A900AE56C6 /* Leave TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		798B1D6A26DF65A800AE56C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					798B1D7126DF65A800AE56C6 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					798B1D8726DF65A900AE56C6 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 798B1D7126DF65A800AE56C6;
+					};
+					798B1D9226DF65A900AE56C6 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 798B1D7126DF65A800AE56C6;
+					};
+				};
+			};
+			buildConfigurationList = 798B1D6D26DF65A800AE56C6 /* Build configuration list for PBXProject "Leave Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 798B1D6926DF65A800AE56C6;
+			productRefGroup = 798B1D7326DF65A800AE56C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				798B1D7126DF65A800AE56C6 /* Leave Tracker */,
+				798B1D8726DF65A900AE56C6 /* Leave TrackerTests */,
+				798B1D9226DF65A900AE56C6 /* Leave TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		798B1D7026DF65A800AE56C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798B1D7D26DF65A900AE56C6 /* Preview Assets.xcassets in Resources */,
+				798B1D7A26DF65A900AE56C6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798B1D8626DF65A900AE56C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798B1D9126DF65A900AE56C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		798B1D6E26DF65A800AE56C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797D9DAF26DF66A300C7480A /* AddLeaveView.swift in Sources */,
+				798B1D7F26DF65A900AE56C6 /* Persistence.swift in Sources */,
+				797D9DB426DF6F4300C7480A /* Color.swift in Sources */,
+				798B1D7826DF65A800AE56C6 /* ContentView.swift in Sources */,
+				798B1D8226DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld in Sources */,
+				79F2CF542786E7A400D96292 /* LeavesView.swift in Sources */,
+				797D9DB126DF687300C7480A /* DesignTeam.swift in Sources */,
+				798B1D7626DF65A800AE56C6 /* Leave Tracker.swift in Sources */,
+				7905302D2786CC1500C6415E /* VisualEffectBlur.swift in Sources */,
+				79F2CF582786E95400D96292 /* PerfectMonthView.swift in Sources */,
+				79F2CF562786E84500D96292 /* MonthPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798B1D8426DF65A900AE56C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798B1D8D26DF65A900AE56C6 /* Leave_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798B1D8F26DF65A900AE56C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798B1D9826DF65A900AE56C6 /* Leave_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		798B1D8A26DF65A900AE56C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 798B1D7126DF65A800AE56C6 /* Leave Tracker */;
+			targetProxy = 798B1D8926DF65A900AE56C6 /* PBXContainerItemProxy */;
+		};
+		798B1D9526DF65A900AE56C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 798B1D7126DF65A800AE56C6 /* Leave Tracker */;
+			targetProxy = 798B1D9426DF65A900AE56C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		798B1D9A26DF65A900AE56C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		798B1D9B26DF65A900AE56C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		798B1D9D26DF65A900AE56C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Leave Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 66D53J4F95;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Leave Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anmol.Leave-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		798B1D9E26DF65A900AE56C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Leave Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 66D53J4F95;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Leave Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anmol.Leave-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		798B1DA026DF65A900AE56C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYL7QWA2S5;
+				INFOPLIST_FILE = "Leave TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suraasa.Leave-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leave Tracker.app/Leave Tracker";
+			};
+			name = Debug;
+		};
+		798B1DA126DF65A900AE56C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYL7QWA2S5;
+				INFOPLIST_FILE = "Leave TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suraasa.Leave-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leave Tracker.app/Leave Tracker";
+			};
+			name = Release;
+		};
+		798B1DA326DF65A900AE56C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYL7QWA2S5;
+				INFOPLIST_FILE = "Leave TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suraasa.Leave-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Leave Tracker";
+			};
+			name = Debug;
+		};
+		798B1DA426DF65A900AE56C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYL7QWA2S5;
+				INFOPLIST_FILE = "Leave TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.suraasa.Leave-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Leave Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		798B1D6D26DF65A800AE56C6 /* Build configuration list for PBXProject "Leave Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798B1D9A26DF65A900AE56C6 /* Debug */,
+				798B1D9B26DF65A900AE56C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798B1D9C26DF65A900AE56C6 /* Build configuration list for PBXNativeTarget "Leave Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798B1D9D26DF65A900AE56C6 /* Debug */,
+				798B1D9E26DF65A900AE56C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798B1D9F26DF65A900AE56C6 /* Build configuration list for PBXNativeTarget "Leave TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798B1DA026DF65A900AE56C6 /* Debug */,
+				798B1DA126DF65A900AE56C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798B1DA226DF65A900AE56C6 /* Build configuration list for PBXNativeTarget "Leave TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798B1DA326DF65A900AE56C6 /* Debug */,
+				798B1DA426DF65A900AE56C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		798B1D8026DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				798B1D8126DF65A900AE56C6 /* Leave_Tracker.xcdatamodel */,
+			);
+			currentVersion = 798B1D8126DF65A900AE56C6 /* Leave_Tracker.xcdatamodel */;
+			path = Leave_Tracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 798B1D6A26DF65A800AE56C6 /* Project object */;
+}
