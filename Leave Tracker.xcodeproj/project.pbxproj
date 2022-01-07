@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		7947BC352788089E00478C23 /* LeavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7947BC342788089E00478C23 /* LeavesView.swift */; };
 		7947BC3F278865F900478C23 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7947BC3D278865F900478C23 /* TeamView.swift */; };
 		7947BC40278865F900478C23 /* AddTeamMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7947BC3E278865F900478C23 /* AddTeamMemberView.swift */; };
+		7947BC432788694600478C23 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 7947BC422788694600478C23 /* Introspect */; };
 		797D9DAF26DF66A300C7480A /* AddLeaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DAE26DF66A300C7480A /* AddLeaveView.swift */; };
 		797D9DB126DF687300C7480A /* DesignTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DB026DF687300C7480A /* DesignTeam.swift */; };
 		797D9DB426DF6F4300C7480A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DB326DF6F4300C7480A /* Color.swift */; };
@@ -80,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7947BC432788694600478C23 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +206,9 @@
 			dependencies = (
 			);
 			name = "Leave Tracker";
+			packageProductDependencies = (
+				7947BC422788694600478C23 /* Introspect */,
+			);
 			productName = "Leave Tracker";
 			productReference = 798B1D7226DF65A800AE56C6 /* Leave Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +280,9 @@
 				Base,
 			);
 			mainGroup = 798B1D6926DF65A800AE56C6;
+			packageReferences = (
+				7947BC412788694600478C23 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 798B1D7326DF65A800AE56C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -494,7 +502,7 @@
 				DEVELOPMENT_TEAM = 66D53J4F95;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Leave Tracker/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,7 +524,7 @@
 				DEVELOPMENT_TEAM = 66D53J4F95;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Leave Tracker/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,6 +660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7947BC412788694600478C23 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7947BC422788694600478C23 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7947BC412788694600478C23 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		798B1D8026DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld */ = {

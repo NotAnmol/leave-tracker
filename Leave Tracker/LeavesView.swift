@@ -23,8 +23,7 @@ struct LeavesView: View {
 			Divider()
 			monthPicker
 		}
-		.edgesIgnoringSafeArea(.bottom)
-		.navigationTitle("Leave Tracker")
+		.navigationTitle("Leaves")
 	}
 	
 	private var addButton: some View {
@@ -32,15 +31,14 @@ struct LeavesView: View {
 			Image(systemName: "plus")
 				.font(.title3.bold())
 				.frame(width: 55, height: 55)
-				.background(Circle().fill(Color.blue))
+				.background(Circle().fill(Color.accentColor))
 				.foregroundColor(.white)
 		}
 	}
 	
 	private var monthPicker: some View {
 		MonthPickerView(month: $month, year: $year)
-			.padding(.bottom, Screen.isXorAbove ? 30 : 0)
-			.background(VisualEffectBlur(blurStyle: .systemUltraThinMaterial))
+			.background(VisualEffectBlur(blurStyle: .systemChromeMaterial))
 	}
 }
 

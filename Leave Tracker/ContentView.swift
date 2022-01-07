@@ -6,13 +6,32 @@
 //
 
 import SwiftUI
-import CoreData
+import Introspect
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
     var body: some View {
-		LeavesView()
+		TabView {
+			NavigationView {
+				LeavesView()
+			}
+			.tabItem {
+				Label("Leaves", systemImage: "list.bullet.circle.fill")
+			}
+		
+			NavigationView {
+				TeamView()
+			}
+			.tabItem {
+				Label("Team", systemImage: "person.3.sequence.fill")
+			}
+		}
+		.introspectTabBarController { tabView in
+			let bar = UITabBarAppearance()
+			bar.backgroundEffect = UIBlurEffect(style: .systemChromeMaterial)
+			
+			tabView.tabBar.standardAppearance = bar
+			tabView.tabBar.scrollEdgeAppearance = bar
+		}
     }
 }
 

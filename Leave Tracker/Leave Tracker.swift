@@ -14,10 +14,8 @@ struct Leave_TrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-			NavigationView {
-				ContentView()
-					.environment(\.managedObjectContext, persistenceController.container.viewContext)
-			}
+			ContentView()
+				.environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
 		.onChange(of: scenePhase) { _ in
 			persistenceController.save()
