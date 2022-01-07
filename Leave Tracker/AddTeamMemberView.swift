@@ -49,7 +49,7 @@ struct AddTeamMemberView: View {
 			UINotificationFeedbackGenerator().notificationOccurred(.success)
 			presentationMode.wrappedValue.dismiss()
 		}) {
-			Text("Send")
+			Text("Add")
 				.font(.headline)
 				.foregroundColor(.suraasaWhite)
 				.frame(maxWidth: .infinity, maxHeight: 60)
