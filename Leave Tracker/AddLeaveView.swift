@@ -63,6 +63,7 @@ struct AddLeaveView: View {
 	private var createLeaveButton: some View {
 		Button(action: {
 			save(member: member, date: leaveDate)
+			UINotificationFeedbackGenerator().notificationOccurred(.success)
 			presentationMode.wrappedValue.dismiss()
 		}) {
 			Text("Create Leave")
