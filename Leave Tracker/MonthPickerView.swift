@@ -44,7 +44,10 @@ struct MonthPickerView: View {
 		let action: () -> ()
 		
 		var body: some View {
-			Button(action: action) {
+			Button(action: {
+				UISelectionFeedbackGenerator().selectionChanged()
+				action()
+			}) {
 				Image(systemName: icon)
 					.frame(width: 40, height: 40, alignment: .center)
 					.background(VisualEffectBlur(blurStyle: .systemThinMaterial))

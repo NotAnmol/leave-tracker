@@ -10,6 +10,8 @@
 		7905302D2786CC1500C6415E /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905302C2786CC1500C6415E /* VisualEffectBlur.swift */; };
 		7947BC3127879C1700478C23 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7947BC3027879C1700478C23 /* Month.swift */; };
 		7947BC3327879C3100478C23 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7947BC3227879C3100478C23 /* Screen.swift */; };
+		7947BC352788089E00478C23 /* LeavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7947BC342788089E00478C23 /* LeavesView.swift */; };
+		7947BC3727880B2900478C23 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7947BC3627880B2900478C23 /* SettingsView.swift */; };
 		797D9DAF26DF66A300C7480A /* AddLeaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DAE26DF66A300C7480A /* AddLeaveView.swift */; };
 		797D9DB126DF687300C7480A /* DesignTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DB026DF687300C7480A /* DesignTeam.swift */; };
 		797D9DB426DF6F4300C7480A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D9DB326DF6F4300C7480A /* Color.swift */; };
@@ -21,7 +23,7 @@
 		798B1D8226DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D8026DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld */; };
 		798B1D8D26DF65A900AE56C6 /* Leave_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D8C26DF65A900AE56C6 /* Leave_TrackerTests.swift */; };
 		798B1D9826DF65A900AE56C6 /* Leave_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B1D9726DF65A900AE56C6 /* Leave_TrackerUITests.swift */; };
-		79F2CF542786E7A400D96292 /* LeavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CF532786E7A400D96292 /* LeavesView.swift */; };
+		79F2CF542786E7A400D96292 /* LeavesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CF532786E7A400D96292 /* LeavesListView.swift */; };
 		79F2CF562786E84500D96292 /* MonthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CF552786E84500D96292 /* MonthPickerView.swift */; };
 		79F2CF582786E95400D96292 /* PerfectMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2CF572786E95400D96292 /* PerfectMonthView.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,8 @@
 		7905302C2786CC1500C6415E /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		7947BC3027879C1700478C23 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		7947BC3227879C3100478C23 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		7947BC342788089E00478C23 /* LeavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeavesView.swift; sourceTree = "<group>"; };
+		7947BC3627880B2900478C23 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		797D9DAE26DF66A300C7480A /* AddLeaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLeaveView.swift; sourceTree = "<group>"; };
 		797D9DB026DF687300C7480A /* DesignTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTeam.swift; sourceTree = "<group>"; };
 		797D9DB326DF6F4300C7480A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -64,7 +68,7 @@
 		798B1D9326DF65A900AE56C6 /* Leave TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leave TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		798B1D9726DF65A900AE56C6 /* Leave_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leave_TrackerUITests.swift; sourceTree = "<group>"; };
 		798B1D9926DF65A900AE56C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79F2CF532786E7A400D96292 /* LeavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeavesView.swift; sourceTree = "<group>"; };
+		79F2CF532786E7A400D96292 /* LeavesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeavesListView.swift; sourceTree = "<group>"; };
 		79F2CF552786E84500D96292 /* MonthPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerView.swift; sourceTree = "<group>"; };
 		79F2CF572786E95400D96292 /* PerfectMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectMonthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,14 +142,16 @@
 				797D9DB226DF6F3900C7480A /* Extensions */,
 				798B1D7526DF65A800AE56C6 /* Leave Tracker.swift */,
 				798B1D7726DF65A800AE56C6 /* ContentView.swift */,
-				79F2CF572786E95400D96292 /* PerfectMonthView.swift */,
+				7947BC342788089E00478C23 /* LeavesView.swift */,
+				79F2CF532786E7A400D96292 /* LeavesListView.swift */,
 				79F2CF552786E84500D96292 /* MonthPickerView.swift */,
-				79F2CF532786E7A400D96292 /* LeavesView.swift */,
+				79F2CF572786E95400D96292 /* PerfectMonthView.swift */,
 				797D9DAE26DF66A300C7480A /* AddLeaveView.swift */,
+				7947BC3627880B2900478C23 /* SettingsView.swift */,
 				7947BC2F27879C0100478C23 /* Constants */,
 				7905302C2786CC1500C6415E /* VisualEffectBlur.swift */,
-				798B1D7926DF65A900AE56C6 /* Assets.xcassets */,
 				798B1D7E26DF65A900AE56C6 /* Persistence.swift */,
+				798B1D7926DF65A900AE56C6 /* Assets.xcassets */,
 				798B1D8326DF65A900AE56C6 /* Info.plist */,
 				798B1D8026DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld */,
 				798B1D7B26DF65A900AE56C6 /* Preview Content */,
@@ -308,14 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7947BC3727880B2900478C23 /* SettingsView.swift in Sources */,
 				797D9DAF26DF66A300C7480A /* AddLeaveView.swift in Sources */,
 				798B1D7F26DF65A900AE56C6 /* Persistence.swift in Sources */,
 				797D9DB426DF6F4300C7480A /* Color.swift in Sources */,
 				7947BC3327879C3100478C23 /* Screen.swift in Sources */,
 				798B1D7826DF65A800AE56C6 /* ContentView.swift in Sources */,
 				798B1D8226DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld in Sources */,
-				79F2CF542786E7A400D96292 /* LeavesView.swift in Sources */,
+				79F2CF542786E7A400D96292 /* LeavesListView.swift in Sources */,
 				797D9DB126DF687300C7480A /* DesignTeam.swift in Sources */,
+				7947BC352788089E00478C23 /* LeavesView.swift in Sources */,
 				798B1D7626DF65A800AE56C6 /* Leave Tracker.swift in Sources */,
 				7947BC3127879C1700478C23 /* Month.swift in Sources */,
 				7905302D2786CC1500C6415E /* VisualEffectBlur.swift in Sources */,

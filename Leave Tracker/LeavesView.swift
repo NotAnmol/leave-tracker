@@ -2,113 +2,52 @@
 //  LeavesView.swift
 //  Leave Tracker
 //
-//  Created by Anmol Jain on 06/01/22.
+//  Created by Anmol Jain on 07/01/22.
 //
 
 import SwiftUI
 
 struct LeavesView: View {
 	@Environment(\.managedObjectContext) private var viewContext
-	@FetchRequest private var leaves: FetchedResults<LeaveLog>
-	
-	init(filter month: Int, and year: Int) {
-		var components = DateComponents()
-		components.month = month
-		components.year = year
-		
-		let startDate = NSDate(timeIntervalSinceNow: Calendar.current.date(from: components)!.timeIntervalSinceNow)
-		components.month = month + 1
-		let endDate = NSDate(timeIntervalSinceNow: Calendar.current.date(from: components)!.timeIntervalSinceNow)
-		
-		_leaves = FetchRequest<LeaveLog>(
-			sortDescriptors: [NSSortDescriptor(keyPath: \LeaveLog.timestamp, ascending: true)],
-			predicate: NSPredicate(format: "(leaveDate >= %@) AND (leaveDate <= %@)", startDate, endDate),
-			animation: .default
-		)
-	}
-	
-	@ViewBuilder
-	var body: some View {
-		if leaves.count == 0 {
-			VStack {
-				Spacer()
-				PerfectMonthView()
-				Spacer()
-			}
-		} else {
-			List {
-				ForEach(leaves) { leave in
-					HStack {
-						Text((DesignTeam(rawValue: leave.member) ?? .anmol).name)
-							.font(.headline)
-						Spacer()
-						Text("\(leave.leaveDate!, formatter: dateFormatter)")
-							.font(.subheadline)
-							.foregroundColor(.secondary)
-					}
-				}
-				.onDelete(perform: deleteItems)
-			}
-			.listStyle(.plain)
-			.toolbar {
-				ToolbarItem(placement: .navigationBarTrailing) {
-					Button(action: presentShareSheet) {
-					   Image(systemName: "square.and.arrow.up")
-				   }
-				}
-				
-				ToolbarItem(placement: .navigationBarLeading) {
-					EditButton()
-				}
-			}
-		}
-	}
-	
-	private func deleteItems(offsets: IndexSet) {
-		withAnimation {
-			offsets.map { leaves[$0] }.forEach(viewContext.delete)
+	@State private var month: Int = Calendar.current.component(.month, from: Date())
+	@State private var year: Int = Calendar.current.component(.year, from: Date())
 
-			do {
-				try viewContext.save()
-			} catch {
-				// Replace this implementation with code to handle the error appropriately.
-				// fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-				let nsError = error as NSError
-				fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-			}
-		}
-	}
-	
-	private let dateFormatter: DateFormatter = {
-		let formatter = DateFormatter()
-		formatter.dateStyle = .full
-		return formatter
-	}()
-	
-	func presentShareSheet() {
-		var leavesData: [DesignTeam: [Date]] = [:]
-		for member in DesignTeam.allCases {
-			leavesData[member] = []
-		}
-		
-		for leave in leaves {
-			leavesData[DesignTeam(rawValue: leave.member) ?? .anmol]?.append(leave.leaveDate!)
-		}
-		
-		var sharedData: String = ""
-		
-		for (member, leaveLog) in leavesData {
-			if leaveLog.isEmpty { continue }
-			sharedData.append("*\(member.name)*\n")
-			leaveLog.forEach { leaveDate in
-				sharedData.append(dateFormatter.string(from: leaveDate))
-				sharedData.append("\n")
+	var body: some View {
+		VStack(spacing: 0) {
+			ZStack(alignment: .bottomTrailing) {
+				LeavesListView(filter: month, and: year)
+				addButton
+					.padding([.bottom, .trailing])
 			}
 			
-			sharedData.append("\n")
+			Divider()
+			monthPicker
 		}
-		
-		let activityVC = UIActivityViewController(activityItems: [sharedData], applicationActivities: nil)
-		UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+		.edgesIgnoringSafeArea(.bottom)
+		.navigationTitle("Leave Tracker")
+	}
+	
+	private var addButton: some View {
+		NavigationLink(destination: AddLeaveView(currentMonth: (month, year)).environment(\.managedObjectContext, viewContext)) {
+			Image(systemName: "plus")
+				.font(.title3.bold())
+				.frame(width: 55, height: 55)
+				.background(Circle().fill(Color.blue))
+				.foregroundColor(.white)
+		}
+	}
+	
+	private var monthPicker: some View {
+		MonthPickerView(month: $month, year: $year)
+			.padding(.bottom, Screen.isXorAbove ? 30 : 0)
+			.background(VisualEffectBlur(blurStyle: .systemUltraThinMaterial))
+	}
+}
+
+struct LeavesView_Previews: PreviewProvider {
+	static var previews: some View {
+		NavigationView {
+			ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+		}
 	}
 }
