@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct LeavesView: View {
 	@Environment(\.managedObjectContext) private var viewContext
@@ -24,6 +25,7 @@ struct LeavesView: View {
 			monthPicker
 		}
 		.navigationTitle("Leaves")
+//		.onAppear(perform: resetCoreData)
 	}
 	
 	private var addButton: some View {
@@ -39,6 +41,21 @@ struct LeavesView: View {
 	private var monthPicker: some View {
 		MonthPickerView(month: $month, year: $year)
 			.background(VisualEffectBlur(blurStyle: .systemChromeMaterial))
+	}
+	
+	private func resetCoreData() {
+		let teamMembers = NSFetchRequest<NSFetchRequestResult>(entityName: "TeamMember")
+		let leaves = NSFetchRequest<NSFetchRequestResult>(entityName: "LeaveLog")
+
+		let batchDeleteRequest1 = NSBatchDeleteRequest(fetchRequest: teamMembers)
+		let batchDeleteRequest2 = NSBatchDeleteRequest(fetchRequest: leaves)
+
+		do {
+			try viewContext.execute(batchDeleteRequest1)
+			try viewContext.execute(batchDeleteRequest2)
+		} catch {
+			// Error Handling
+		}
 	}
 }
 

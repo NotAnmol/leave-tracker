@@ -10,6 +10,10 @@ import SwiftUI
 struct LeavesListView: View {
 	@Environment(\.managedObjectContext) private var viewContext
 	@FetchRequest private var leaves: FetchedResults<LeaveLog>
+	@FetchRequest(
+		sortDescriptors: [NSSortDescriptor(keyPath: \TeamMember.dateAdded, ascending: true)],
+		animation: .default)
+	private var teamMembers: FetchedResults<TeamMember>
 	
 	init(filter month: Int, and year: Int) {
 		var components = DateComponents()
@@ -39,7 +43,7 @@ struct LeavesListView: View {
 			List {
 				ForEach(leaves) { leave in
 					HStack {
-						Text((DesignTeam(rawValue: leave.member) ?? .anmol).name)
+						Text(leave.member!.name ?? "Unknown")
 							.font(.headline)
 						Spacer()
 						Text("\(leave.leaveDate!, formatter: dateFormatter)")
@@ -86,20 +90,20 @@ struct LeavesListView: View {
 	}()
 	
 	func presentShareSheet() {
-		var leavesData: [DesignTeam: [Date]] = [:]
-		for member in DesignTeam.allCases {
+		var leavesData: [TeamMember: [Date]] = [:]
+		for member in teamMembers {
 			leavesData[member] = []
 		}
 		
 		for leave in leaves {
-			leavesData[DesignTeam(rawValue: leave.member) ?? .anmol]?.append(leave.leaveDate!)
+			leavesData[leave.member!]?.append(leave.leaveDate!)
 		}
 		
 		var sharedData: String = ""
 		
 		for (member, leaveLog) in leavesData {
 			if leaveLog.isEmpty { continue }
-			sharedData.append("*\(member.name)*\n")
+			sharedData.append("*\(member.name!)*\n")
 			leaveLog.forEach { leaveDate in
 				sharedData.append(dateFormatter.string(from: leaveDate))
 				sharedData.append("\n")

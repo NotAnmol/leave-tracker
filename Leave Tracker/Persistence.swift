@@ -16,9 +16,10 @@ struct PersistenceController {
         for _ in 0..<10 {
             let newLeave = LeaveLog(context: viewContext)
 			newLeave.timestamp = Date()
-			newLeave.member = DesignTeam.anmol.rawValue
-//			newLeave.leaveDate = Date(timeIntervalSinceNow: TimeInterval(41327948))
 			newLeave.leaveDate = Date()
+			newLeave.member = TeamMember(context: viewContext)
+			newLeave.member?.dateAdded = Date()
+			newLeave.member?.name = "Anmol Jain"
         }
         do {
             try viewContext.save()

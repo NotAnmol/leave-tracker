@@ -11,8 +11,13 @@ struct AddLeaveView: View {
 	@Environment(\.managedObjectContext) private var viewContext
 	@Environment(\.presentationMode) private var presentationMode
 	
+	@FetchRequest(
+		sortDescriptors: [NSSortDescriptor(keyPath: \TeamMember.dateAdded, ascending: true)],
+		animation: .default)
+	private var teamMembers: FetchedResults<TeamMember>
+	
+	@State private var member: TeamMember = TeamMember()
 	@State private var leaveDate: Date = Date()
-	@State private var member: DesignTeam = .anmol
 	
 	private let currentMonthDate: Date
 	
@@ -34,8 +39,8 @@ struct AddLeaveView: View {
 				.padding(.bottom, 30)
 			
 			Picker("Member", selection: $member) {
-				ForEach(DesignTeam.allCases, id: \.self) { member in
-					Text(member.name)
+				ForEach(teamMembers, id: \.self) { member in
+					Text(member.name!)
 						.tag(member)
 				}
 			}
@@ -57,12 +62,13 @@ struct AddLeaveView: View {
 		.navigationBarTitleDisplayMode(.inline)
 		.onAppear {
 			leaveDate = currentMonthDate
+			member = teamMembers[0]
 		}
     }
 	
 	private var createLeaveButton: some View {
 		Button(action: {
-			save(member: member, date: leaveDate)
+			save()
 			UINotificationFeedbackGenerator().notificationOccurred(.success)
 			presentationMode.wrappedValue.dismiss()
 		}) {
@@ -78,12 +84,12 @@ struct AddLeaveView: View {
 }
 
 extension AddLeaveView {
-	private func save(member: DesignTeam, date: Date) {
+	private func save() {
 		withAnimation {
 			let newLeave = LeaveLog(context: viewContext)
 			newLeave.timestamp = Date()
-			newLeave.member = member.rawValue
-			newLeave.leaveDate = date
+			newLeave.leaveDate = leaveDate
+			newLeave.member = member
 			
 			do {
 				try viewContext.save()
