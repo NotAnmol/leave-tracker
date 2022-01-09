@@ -18,6 +18,7 @@ struct AddLeaveView: View {
 	
 	@State private var member: TeamMember = TeamMember()
 	@State private var leaveDate: Date = Date()
+	@State private var noTeamMemberAvailableAlert: Bool = false
 	
 	private let currentMonthDate: Date
 	
@@ -60,9 +61,13 @@ struct AddLeaveView: View {
 		}
 		.padding(.horizontal)
 		.navigationBarTitleDisplayMode(.inline)
-		.onAppear {
-			leaveDate = currentMonthDate
-			member = teamMembers[0]
+		.onAppear(perform: setup)
+		.alert("No team member availble", isPresented: $noTeamMemberAvailableAlert) {
+			Button("OK", role: .cancel) {
+				presentationMode.wrappedValue.dismiss()
+			}
+		} message: {
+			Text("Please add a team member from Team's tab")
 		}
     }
 	
@@ -80,6 +85,15 @@ struct AddLeaveView: View {
 				.cornerRadius(10)
 		}
 		.padding(.bottom)
+	}
+	
+	private func setup() {
+		if teamMembers.isEmpty {
+			noTeamMemberAvailableAlert.toggle()
+		} else {
+			member = teamMembers[0]
+			leaveDate = currentMonthDate
+		}
 	}
 }
 

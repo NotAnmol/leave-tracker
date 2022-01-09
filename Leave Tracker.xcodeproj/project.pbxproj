@@ -161,14 +161,14 @@
 		798B1D7426DF65A800AE56C6 /* Leave Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				7905302C2786CC1500C6415E /* VisualEffectBlur.swift */,
+				798B1D7E26DF65A900AE56C6 /* Persistence.swift */,
+				7947BC2F27879C0100478C23 /* Constants */,
 				797D9DB226DF6F3900C7480A /* Extensions */,
 				798B1D7526DF65A800AE56C6 /* Leave Tracker.swift */,
 				798B1D7726DF65A800AE56C6 /* ContentView.swift */,
 				7947BC44278ABF2700478C23 /* Leaves */,
 				7947BC45278ABF3D00478C23 /* Team */,
-				7947BC2F27879C0100478C23 /* Constants */,
-				7905302C2786CC1500C6415E /* VisualEffectBlur.swift */,
-				798B1D7E26DF65A900AE56C6 /* Persistence.swift */,
 				798B1D7926DF65A900AE56C6 /* Assets.xcassets */,
 				798B1D8326DF65A900AE56C6 /* Info.plist */,
 				798B1D8026DF65A900AE56C6 /* Leave_Tracker.xcdatamodeld */,

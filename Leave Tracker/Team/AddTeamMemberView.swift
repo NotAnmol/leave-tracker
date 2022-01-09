@@ -36,6 +36,7 @@ struct AddTeamMemberView: View {
 	private var nameTextField: some View {
 		TextField("Enter team member's name", text: $teamMemberName)
 			.textInputAutocapitalization(.words)
+			.disableAutocorrection(true)
 			.padding()
 			.frame(height: 60)
 			.foregroundColor(teamMemberName.isEmpty ? .suraasaCarbon : .suraasaAluminium)
