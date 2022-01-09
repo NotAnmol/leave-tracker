@@ -109,6 +109,27 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		7947BC44278ABF2700478C23 /* Leaves */ = {
+			isa = PBXGroup;
+			children = (
+				7947BC342788089E00478C23 /* LeavesView.swift */,
+				79F2CF532786E7A400D96292 /* LeavesListView.swift */,
+				79F2CF552786E84500D96292 /* MonthPickerView.swift */,
+				79F2CF572786E95400D96292 /* PerfectMonthView.swift */,
+				797D9DAE26DF66A300C7480A /* AddLeaveView.swift */,
+			);
+			path = Leaves;
+			sourceTree = "<group>";
+		};
+		7947BC45278ABF3D00478C23 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				7947BC3D278865F900478C23 /* TeamView.swift */,
+				7947BC3E278865F900478C23 /* AddTeamMemberView.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
 		797D9DB226DF6F3900C7480A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,13 +164,8 @@
 				797D9DB226DF6F3900C7480A /* Extensions */,
 				798B1D7526DF65A800AE56C6 /* Leave Tracker.swift */,
 				798B1D7726DF65A800AE56C6 /* ContentView.swift */,
-				7947BC342788089E00478C23 /* LeavesView.swift */,
-				79F2CF532786E7A400D96292 /* LeavesListView.swift */,
-				79F2CF552786E84500D96292 /* MonthPickerView.swift */,
-				79F2CF572786E95400D96292 /* PerfectMonthView.swift */,
-				797D9DAE26DF66A300C7480A /* AddLeaveView.swift */,
-				7947BC3D278865F900478C23 /* TeamView.swift */,
-				7947BC3E278865F900478C23 /* AddTeamMemberView.swift */,
+				7947BC44278ABF2700478C23 /* Leaves */,
+				7947BC45278ABF3D00478C23 /* Team */,
 				7947BC2F27879C0100478C23 /* Constants */,
 				7905302C2786CC1500C6415E /* VisualEffectBlur.swift */,
 				798B1D7E26DF65A900AE56C6 /* Persistence.swift */,
